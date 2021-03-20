@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên âm</title>
+</head>
+<body>
+<script>
+    let songuyen=parseFloat(prompt("số lượng p.tử: "));
+    let arr=[];
+    let count=0;
+    let arr2=[]
+    for(let i=0;i<songuyen;i++) {
+        arr[i] = Math.floor(Math.random() * 100 );
+        document.write(arr[i] + "<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]<0){
+            arr2[count]=arr[i];
+            count++;
+        }
+    }document.write(arr2)
+</script>
+</body>
+</html>

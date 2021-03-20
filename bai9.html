@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    let a=parseInt(prompt("số lượng p.tử a: "));
+    let b=parseInt(prompt("số lượng p.tử b: "));
+    let arr1=[];
+    for(let i=0; i<a ;i++) {
+
+        arr1[i] = Math.floor(Math.random() * 100);
+
+    }
+
+    document.write('Mảng a' + "<br>" +arr1);
+    let arr2=[]
+    for (let i = 0; i < b  ; i++) {
+        arr2[i]=Math.floor(Math.random() * 100);
+
+    }
+
+    document.write('<br>' + 'Mảng b' + "<br>" +arr2 );
+    let arr3=arr1.concat(arr2)
+    document.write('git <br>' + 'Mảng c' + "<br>" +arr3)
+</script>
+
+</body>
+</html>
